@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="手机性能监控"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="刷新数据"
+        android:onClick="onRefresh"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#6750A4"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvCpuUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPU: 0%"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvMemoryUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内存: 0 MB"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvBatteryUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="电池: 0%"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp" />
+
+        <ProgressBar
+            android:id="@+id/pbBattery"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvStorageUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="存储: 0 B"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="温度: 0°C"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvProcessCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进程数: 0"
+            android:textSize="16sp"
+            android:textColor="#212121" />
+
+    </LinearLayout>
+
+</LinearLayout>

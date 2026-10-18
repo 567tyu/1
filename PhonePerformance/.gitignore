@@ -1,0 +1,15 @@
+# Phone Performance Monitor
+# 一个用于查看手机性能的应用程序
+# 
+# 功能：
+# - CPU使用率监控
+# - 内存使用监控
+# - 电池状态监控
+# - 存储空间监控
+# - 设备温度监控
+# - 运行进程数统计
+#
+# 技术栈：
+# - Java
+# - Material Design 3
+# - Android SDK 35
